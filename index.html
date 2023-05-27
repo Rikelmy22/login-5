@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style-principal.css" media="all">
+    <link rel="stylesheet" href="estilos/media-queries.css">
+    <title>Login-05</title>
+</head>
+<body>
+   <div id="conteiner">
+    <section id="login">
+        <div id="imagem"></div>
+        <div id="formulario">
+            <h1>
+                Login
+            </h1>
+            <p>
+                Preencha os espaços vazios com seus dados de entrada para ter acesso a sua conta e fazer sua alterações.
+            </p>
+            <form action="destinatario.php" method="post" autocomplete="on">
+                <div class="campo">
+                   <label for="ie-mail"><span class="material-icons">person</span></label>
+                   <input type="email" name="e-mail" id="ie-mail" placeholder="seu e-mail" required maxlength="30">
+                </div>
+                <div class="campo">
+                    <label for="isenha"><span class="material-icons">key</span></label>
+                    <input type="password" name="senha" id="isenha" placeholder="sua senha" required minlength="8" maxlength="17">
+                </div>
+                <input type="submit" value="ENVIAR">
+                <a href="apagar-meus-dados.com.br" id="botao">Esqueci minha senha <span class="material-icons">mail</span></a>
+            </form>
+        </div>
+    </section>
+   </div>
+</body>
+</html>
